@@ -34,26 +34,8 @@
 
 - (void)didUpdateRSSI:(int)RSSI
 {
-    if (RSSI < 0 && RSSI > -50) {
-        
-        _infoLabel.text = [NSString stringWithFormat:@"Immediate"];
-        NSLog(@"Immediate");
-    }
-    else if (RSSI <= -50 && RSSI >= -80) {
-        
-        _infoLabel.text = [NSString stringWithFormat:@"Near"];
-        NSLog(@"Near");
-    }
-    else if (RSSI < -80) {
-        
-        _infoLabel.text = [NSString stringWithFormat:@"Far"];
-        NSLog(@"Far");
-    }
-    else {
-        
-        _infoLabel.text = [NSString stringWithFormat:@"Unknown"];
-        NSLog(@"Unknown");
-    }
+    _infoLabel.text = [NSString stringWithFormat:@"%d", RSSI];
+    NSLog(@"%d", RSSI);
 }
 
 - (void)didReceiveMemoryWarning
