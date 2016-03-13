@@ -8,5 +8,5 @@
 
 // Run Terminal app, run uuidgen (twice) to get your very own UUIDs
 
-#define SERVICE_UUID @"00000000-0000-0000-0000-000000000000"
-#define CHARACTERISTIC_UUID @"00000000-0000-0000-0000-000000000000"
+#define SERVICE_UUID @"193fc0b3-f64c-49b6-aab1-f9cfaaeb0e59"
+#define CHARACTERISTIC_UUID @"193fc0b3-f64c-49b6-aab1-f9cfaaeb0e59"
